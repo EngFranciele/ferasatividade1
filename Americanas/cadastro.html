@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Americanas - tudo, a toda hora</title>
+  
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  <header>
+    <img src="americanas.png" alt="Logo Americanas">
+  </header>
+
+  <div class="form-container">
+    <h1>criar seu cadastro</h1>
+    <p class="subtext">veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada :) </p>
+    <p class="required">*campos obrigatórios</p>
+
+    <form>
+
+      <label for="nome"><span>*</span>nome completo</label>
+      <input type="text" name="nome" id="nome" required>
+
+      <label for="apelido"><span>*</span>Como gostaria que a gente te chamasse?</label>
+      <input type="text" name="apelido" id="apelido" required>
+
+      <label><span>*</span>gênero</label>
+      <div class="small-text">pra gente te conhecer um pouquinho melhor :) </div>
+      <div class="radio-group">
+        <label><input type="radio" name="genero" value="feminino"> feminino</label>
+        <label><input type="radio" name="genero" value="masculino"> masculino</label>
+        <label><input type="radio" name="genero" value="não_informar"> não informar</label>
+        </div>
+          
+        <label for="nascimento"><span>*</span>data de nascimento</label>
+        <div class="small-text">necessário para identificar a maioridade, no formato DD/MM/AAAA</div>
+        <input class="text" id="nascimento" name="nascimento" placeholder="___/___/_____" required>
+
+        <label for="cpf"><span>*</span>CPF</label>
+        <div class="small-text">necessário pra emissão das Notas Fiscais</div>
+        <input type="text" id="cpf" name="cpf" placeholder="____.____.____-___" required>
+
+        <a href="#">é pessoa jurídica? conheça a americanas empresas</a>
+
+        <label for="telefone"><span>*</span>telefone</label>
+        <div class="small-text">caso a gente precise entrar em contato sobre seus pedidos</div>
+        <input type="text" id="telefone" name="telefone" placeholder="(99) 99999-9999" required>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="promo" name="promo" checked>
+          <label for="promo">receber mensagem via sms</label>
+        </div>
+
+        <label for="e-mail"><span>*</span>e-mail</label>
+        <div class="small-text">informe um e-mail válido. Você vai precisar ativar sua conta depois de criar seu cadastro</div>
+        <input type="e-mail" id="e-mail" name="e-mail" required>
+
+        <div class="checkbox-group">
+          <input type="checkbox" name="promo" id="promo checked">
+          <label for="promo">receber e-mails promocionais</label>
+        </div>
+
+        <label for="senha"><span>*</span>senha</label>
+        <div class="small-text">precisa ter entre 6 e 20 caracteres</div>
+        <input type="password" name="senha" id="senha" required>
+
+        <div class="checkbox-group">
+          <input type="checkbox" name="compartilhar" id="compartilhar" checked>
+          <label for="compartilhar">compartilhar meus dados com parceiros para ter conteúdos personalizados, <a href="#">veja como funciona</a></label>
+        </div>
+
+        <button class="submit-btn" type="submit">criar seu cadastro</button>
+
+        </form>
+
+        <p class="footer-text">
+          Não se preocupe, nosso site é seguro! Ao criar o seu cadastro você concorda com a nossa <a href="https://www.americanas.com.br/especial/aviso-de-privacidade">política de privacidade</a>
+        </p>
+        </div>
+</body>
+</html>
